@@ -2,9 +2,10 @@
 classes:
  - 'profile::base'
 
-ntp::servers:
-  - 0.nl.pool.ntp.org
-  - 1.nl.pool.ntp.org
-  - 2.nl.pool.ntp.org
-
+ntp:
+  - servers:
+    - 0.nl.pool.ntp.org
+    - 1.nl.pool.ntp.org
+    - 2.nl.pool.ntp.org
+  - autoupdate: true
 
