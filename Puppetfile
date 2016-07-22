@@ -1,6 +1,7 @@
 forge 'forge.puppetlabs.com'
 
 # Forge Modules
-mod 'puppetlabs/ntp', '4.1.0'
+mod 'puppetlabs/ntp'
 mod 'puppetlabs/stdlib'
 
+mod 'custom', :local => true
