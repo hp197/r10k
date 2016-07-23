@@ -1,9 +1,15 @@
-[submodule "modules/external/ntp"]
-	path = modules/external/ntp
+[submodule "external/ntp"]
+	path = external/ntp
 	url = https://github.com/puppetlabs/puppetlabs-ntp.git
-[submodule "modules/external/stdlib"]
-	path = modules/external/stdlib
+[submodule "external/stdlib"]
+	path = external/stdlib
 	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
-[submodule "modules/external/locales"]
-	path = modules/external/locales
+[submodule "external/locales"]
+	path = external/locales
 	url = https://github.com/saz/puppet-locales.git
+[submodule "external/ssh"]
+	path = external/ssh
+	url = https://github.com/saz/puppet-ssh.git
+[submodule "external/concat"]
+	path = external/concat
+	url = https://github.com/puppetlabs/puppetlabs-concat.git

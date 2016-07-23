@@ -1,0 +1,12 @@
+#!/bin/bash
+
+GITHUB_URL="https://github.com/"
+SUBMODULES="puppetlabs/puppetlabs-ntp.git puppetlabs/puppetlabs-stdlib.git saz/puppet-locales.git saz/puppet-ssh.git puppetlabs/puppetlabs-concat.git"
+
+
+for MODULE in ${SUBMODULES}; do
+	TARGETDIR=`echo "${MODULE}" | rev | cut -c5- | cut -d/ -f1 | cut -d- -f1 | rev`
+
+	git submodule add "${GITHUB_URL}${MODULE}" "${TARGETDIR}"
+done
+
