@@ -19,6 +19,6 @@ class custom::base::environment_ps1()
     uid     => 0,
     gid     => 0,
     mode    => 0644,
-    content => epp('custom/base/set_command_prompt.sh.erb', {'rgb_term_color' => $rgb_term_color }),
+    content => template('custom/base/set_command_prompt.sh.erb'),
   }
 }
